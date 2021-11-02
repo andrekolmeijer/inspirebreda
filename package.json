@@ -1,0 +1,22 @@
+{
+  "name": "inspirebreda",
+  "version": "1.0.0",
+  "description": "Tijdelijke website voor Inspire Coffee Company te Breda.",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev": "npx tailwindcss --output css/tailwind.css --watch",
+    "build": "npx tailwindcss --output css/tailwind.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrekolmeijer/inspirebreda.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrekolmeijer/inspirebreda/issues"
+  },
+  "homepage": "https://github.com/andrekolmeijer/inspirebreda#readme"
+}
