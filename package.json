@@ -4,8 +4,8 @@
   "description": "Tijdelijke website voor Inspire Coffee Company te Breda.",
   "main": "tailwind.config.js",
   "scripts": {
-    "dev": "npx tailwindcss --output css/tailwind.css --watch",
-    "build": "npx tailwindcss --output css/tailwind.css --minify",
+    "dev": "npx tailwindcss --input css/custom.css --output css/tailwind.css --watch",
+    "build": "npx tailwindcss --input css/custom.css --output css/tailwind.css --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
