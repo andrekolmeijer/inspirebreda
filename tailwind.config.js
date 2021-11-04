@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'inspire-orange': '#F98A0C', // #f28c00
+        'inspire-orange': '#F98A0C', // #F28C00 inspirecoffee.com / #F98A0C menukaart
         'inspire-brown': '#331606',
         'inspire-brown-light': '#DDC5B8',
       },
