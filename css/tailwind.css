@@ -942,6 +942,11 @@ html {
   transform: var(--tw-transform);
 }
 
+.hover\:bg-inspire-orange:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 138, 12, var(--tw-bg-opacity));
+}
+
 .hover\:text-inspire-orange:hover {
   --tw-text-opacity: 1;
   color: rgba(249, 138, 12, var(--tw-text-opacity));
@@ -949,6 +954,11 @@ html {
 
 .hover\:opacity-75:hover {
   opacity: 0.75;
+}
+
+.focus\:bg-inspire-orange:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 138, 12, var(--tw-bg-opacity));
 }
 
 .focus\:text-inspire-orange:focus {
@@ -965,8 +975,23 @@ html {
   background-color: rgba(51, 22, 6, var(--tw-bg-opacity));
 }
 
+.active\:text-inspire-brown:active {
+  --tw-text-opacity: 1;
+  color: rgba(51, 22, 6, var(--tw-text-opacity));
+}
+
 .active\:opacity-100:active {
   opacity: 1;
+}
+
+.group:hover .group-hover\:text-inspire-orange {
+  --tw-text-opacity: 1;
+  color: rgba(249, 138, 12, var(--tw-text-opacity));
+}
+
+.group:focus .group-focus\:text-inspire-orange {
+  --tw-text-opacity: 1;
+  color: rgba(249, 138, 12, var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
