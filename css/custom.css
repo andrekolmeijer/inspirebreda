@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 @layer utilities {
+
   html {
     scroll-behavior: smooth;
   }
+
   .column-2 {
     column-count: 2;
     column-gap: 2rem;
   }
+
 }
