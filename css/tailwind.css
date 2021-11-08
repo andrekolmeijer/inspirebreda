@@ -611,20 +611,8 @@ video {
   --tw-shadow: 0 0 #0000;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.left-0 {
-  left: 0px;
 }
 
 .m-auto {
@@ -833,10 +821,6 @@ video {
   padding-bottom: 4rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
-}
-
 .pt-8 {
   padding-top: 2rem;
 }
@@ -847,6 +831,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .pb-8 {
@@ -918,9 +906,14 @@ video {
   color: rgba(51, 22, 6, var(--tw-text-opacity));
 }
 
-.text-white {
+.text-inspire-blue-gray {
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgba(176, 196, 207, var(--tw-text-opacity));
+}
+
+.text-inspire-orange-logo {
+  --tw-text-opacity: 1;
+  color: rgba(242, 140, 0, var(--tw-text-opacity));
 }
 
 .text-inspire-orange {
@@ -928,19 +921,14 @@ video {
   color: rgba(249, 138, 12, var(--tw-text-opacity));
 }
 
-.text-inspire-blue-gray {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgba(176, 196, 207, var(--tw-text-opacity));
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .text-inspire-brown-light {
   --tw-text-opacity: 1;
   color: rgba(221, 197, 184, var(--tw-text-opacity));
-}
-
-.text-inspire-orange-logo {
-  --tw-text-opacity: 1;
-  color: rgba(242, 140, 0, var(--tw-text-opacity));
 }
 
 .antialiased {
@@ -990,11 +978,6 @@ html {
   color: rgba(249, 138, 12, var(--tw-text-opacity));
 }
 
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
-
 .hover\:text-inspire-blue-gray:hover {
   --tw-text-opacity: 1;
   color: rgba(176, 196, 207, var(--tw-text-opacity));
@@ -1033,19 +1016,14 @@ html {
   color: rgba(51, 22, 6, var(--tw-text-opacity));
 }
 
-.active\:text-inspire-orange:active {
+.active\:text-inspire-orange-logo:active {
   --tw-text-opacity: 1;
-  color: rgba(249, 138, 12, var(--tw-text-opacity));
+  color: rgba(242, 140, 0, var(--tw-text-opacity));
 }
 
 .active\:text-inspire-blue-gray:active {
   --tw-text-opacity: 1;
   color: rgba(176, 196, 207, var(--tw-text-opacity));
-}
-
-.active\:text-inspire-orange-logo:active {
-  --tw-text-opacity: 1;
-  color: rgba(242, 140, 0, var(--tw-text-opacity));
 }
 
 .active\:opacity-100:active {
