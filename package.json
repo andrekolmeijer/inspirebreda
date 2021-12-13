@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/andrekolmeijer/inspirebreda#readme",
   "devDependencies": {
-    "tailwindcss": "^3.0.2"
+    "tailwindcss": "^3.0.2",
+    "tailwindcss-hyphens": "^0.1.0"
   }
 }
