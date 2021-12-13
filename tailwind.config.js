@@ -10,6 +10,8 @@ module.exports = {
         'inspire-brown': '#331606',
         'inspire-brown-light': '#DDC5B8',
         'inspire-blue-gray': '#B0C4CF',
+        'instagram-blue': '#0095F6',
+        'instagram-blue-dark': '#0074CC',
       },
       fontFamily: {
         sans: 'Roboto, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
