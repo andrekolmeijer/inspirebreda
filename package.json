@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/andrekolmeijer/inspirebreda/issues"
   },
-  "homepage": "https://github.com/andrekolmeijer/inspirebreda#readme"
+  "homepage": "https://github.com/andrekolmeijer/inspirebreda#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.2"
+  }
 }
