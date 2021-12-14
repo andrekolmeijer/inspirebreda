@@ -1,3 +1,5 @@
+let plugin = require('tailwindcss/plugin')
+
 module.exports = {
   mode: 'jit',
   purge: ['*.html'],
@@ -24,6 +26,10 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require("tailwindcss-hyphens")
+    require("tailwindcss-hyphens"),
+    plugin(function ({ addVariant }) {
+      // Add a `second` variant, ie. `second:ml-0`
+      addVariant('second', '&:nth-child(2)')
+    })
   ],
 }
