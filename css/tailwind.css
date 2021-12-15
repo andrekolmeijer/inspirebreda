@@ -587,6 +587,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 300;
 }
 
+.h-72 {
+  height: 18rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -959,6 +963,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1234,6 +1243,16 @@ html {
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .sm\:last\:pr-0:last-child {
