@@ -483,6 +483,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 2rem;
 }
 
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -750,6 +755,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.overflow-auto {
+  overflow: auto;
 }
 
 .overflow-hidden {
@@ -1201,6 +1210,10 @@ html {
     max-width: none;
   }
 
+  .sm\:transform {
+    transform: var(--tw-transform);
+  }
+
   .sm\:columns-2 {
     -moz-columns: 2;
          columns: 2;
@@ -1230,9 +1243,21 @@ html {
     gap: 2rem;
   }
 
+  .sm\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
   .sm\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .sm\:pl-0 {
+    padding-left: 0px;
+  }
+
+  .sm\:text-center {
+    text-align: center;
   }
 
   .sm\:text-xl {
@@ -1255,8 +1280,24 @@ html {
     line-height: 2rem;
   }
 
+  .sm\:transition-transform {
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .sm\:duration-200 {
+    transition-duration: 200ms;
+  }
+
   .sm\:last\:pr-0:last-child {
     padding-right: 0px;
+  }
+
+  .sm\:hover\:scale-105:hover {
+    --tw-scale-x: 1.05;
+    --tw-scale-y: 1.05;
+    transform: var(--tw-transform);
   }
 
   .sm\:second\:pl-0:nth-child(2) {
