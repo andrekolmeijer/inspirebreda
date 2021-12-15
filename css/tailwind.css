@@ -445,6 +445,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
@@ -1337,8 +1345,18 @@ html {
     transition-duration: 150ms;
   }
 
+  .sm\:transition-shadow {
+    transition-property: box-shadow;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
   .sm\:duration-200 {
     transition-duration: 200ms;
+  }
+
+  .sm\:duration-1000 {
+    transition-duration: 1000ms;
   }
 
   .sm\:last\:pr-0:last-child {
