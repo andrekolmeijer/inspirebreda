@@ -1032,8 +1032,44 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-instagram-blue\/50 {
   --tw-shadow-color: rgb(0 149 246 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-instagram-blue\/30 {
+  --tw-shadow-color: rgb(0 149 246 / 0.3);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-instagram-blue\/40 {
+  --tw-shadow-color: rgb(0 149 246 / 0.4);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-inspire-orange\/20 {
+  --tw-shadow-color: rgb(249 138 12 / 0.2);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-inspire-orange {
+  --tw-shadow-color: #F98A0C;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-white {
+  --tw-shadow-color: #fff;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-white\/20 {
+  --tw-shadow-color: rgb(255 255 255 / 0.2);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -1114,6 +1150,11 @@ html {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.hover\:shadow-instagram-blue-dark\/40:hover {
+  --tw-shadow-color: rgb(0 116 204 / 0.4);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .focus\:bg-instagram-blue-dark:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(0 116 204 / var(--tw-bg-opacity));
@@ -1133,6 +1174,11 @@ html {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.focus\:shadow-instagram-blue-dark\/40:focus {
+  --tw-shadow-color: rgb(0 116 204 / 0.4);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .active\:bg-instagram-blue:active {
   --tw-bg-opacity: 1;
   background-color: rgb(0 149 246 / var(--tw-bg-opacity));
@@ -1149,6 +1195,11 @@ html {
 
 .active\:shadow-instagram-blue\/50:active {
   --tw-shadow-color: rgb(0 149 246 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.active\:shadow-instagram-blue\/40:active {
+  --tw-shadow-color: rgb(0 149 246 / 0.4);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -1298,6 +1349,12 @@ html {
     --tw-scale-x: 1.05;
     --tw-scale-y: 1.05;
     transform: var(--tw-transform);
+  }
+
+  .sm\:hover\:shadow-xl:hover {
+    --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
   .sm\:second\:pl-0:nth-child(2) {
