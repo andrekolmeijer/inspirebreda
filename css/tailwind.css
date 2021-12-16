@@ -741,6 +741,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.75rem;
 }
 
+.gap-9 {
+  gap: 2.25rem;
+}
+
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -1302,6 +1306,10 @@ html {
     gap: 2rem;
   }
 
+  .sm\:gap-9 {
+    gap: 2.25rem;
+  }
+
   .sm\:overflow-x-hidden {
     overflow-x: hidden;
   }
@@ -1309,6 +1317,11 @@ html {
   .sm\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .sm\:pl-0 {
@@ -1359,8 +1372,16 @@ html {
     transition-duration: 1000ms;
   }
 
+  .sm\:last\:mr-4:last-child {
+    margin-right: 1rem;
+  }
+
   .sm\:last\:pr-0:last-child {
     padding-right: 0px;
+  }
+
+  .sm\:last\:pr-4:last-child {
+    padding-right: 1rem;
   }
 
   .sm\:hover\:scale-105:hover {
@@ -1375,8 +1396,16 @@ html {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
+  .sm\:second\:ml-4:nth-child(2) {
+    margin-left: 1rem;
+  }
+
   .sm\:second\:pl-0:nth-child(2) {
     padding-left: 0px;
+  }
+
+  .sm\:second\:pl-4:nth-child(2) {
+    padding-left: 1rem;
   }
 }
 

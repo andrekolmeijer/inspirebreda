@@ -119,13 +119,13 @@
             </div>
         </section>
         <section id="menu" class="bg-inspire-orange">
-            <div class="pt-16 pb-8 sm:px-8 max-w-5xl m-auto">
-                <div class="w-full sm:text-center pl-8 sm:pl-0 font-oswald uppercase tracking-wide text-2xl font-bold text-white">
+            <div class="pt-16 pb-8 max-w-5xl m-auto">
+                <div class="w-full sm:text-center pl-8 sm:px-8 font-oswald uppercase tracking-wide text-2xl font-bold text-white">
                     <h2>
                         Menukaarten
                     </h2>
                 </div>
-                <div x-data class="flex sm:grid sm:grid-cols-2 md:grid-cols-4 py-8 gap-4 snap-x snap-mandatory overflow-x-auto sm:overflow-x-hidden">
+                <div x-data class="flex sm:grid sm:grid-cols-2 md:grid-cols-4 py-8 sm:px-8 gap-6 sm:gap-9 snap-x snap-mandatory overflow-x-auto sm:overflow-x-hidden">
                     <template x-for="menukaart in $store.data.menukaarten">
                         <a class="flex justify-center sm:transform sm:hover:scale-105 sm:transition-transform sm:duration-200 h-full flex-shrink-0 second:snap-start snap-center last:snap-end snap-always second:pl-8 last:pr-8 sm:second:pl-0 sm:last:pr-0"
                            :href="menukaart.href"
