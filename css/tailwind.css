@@ -659,6 +659,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow-x: auto;
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -918,10 +922,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 .scrollbar-hidden::-webkit-scrollbar {

@@ -4,10 +4,6 @@
 
 @layer utilities {
 
-  html {
-    scroll-behavior: smooth;
-  }
-
   .scrollbar-hidden::-webkit-scrollbar {
     display: none;
   }
