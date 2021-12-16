@@ -1133,6 +1133,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.\[image-rendering\:-webkit-optimize-contrast\] {
+  image-rendering: -webkit-optimize-contrast;
+}
+
 .last\:mr-8:last-child {
   margin-right: 2rem;
 }
