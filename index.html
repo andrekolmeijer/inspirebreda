@@ -260,6 +260,77 @@
             })
         })
     </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CafeOrCoffeeShop",
+            "logo": "https://inspirebreda.netlify.app/img/inspire-logo-small.png"
+            "image": [
+                "https://inspirebreda.netlify.app/img/carousel-1.jpg",
+                "https://inspirebreda.netlify.app/img/carousel-2.jpg",
+                "https://inspirebreda.netlify.app/img/carousel-3.jpg",
+                "https://inspirebreda.netlify.app/img/carousel-4.jpg",
+                "https://inspirebreda.netlify.app/img/carousel-5.jpg",
+                "https://inspirebreda.netlify.app/img/carousel-6.jpg",
+                "https://inspirebreda.netlify.app/img/carousel-7.jpg",
+                "https://inspirebreda.netlify.app/img/carousel-8.jpg"
+            ],
+            "name": "Inspire Coffee Company",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Veemarktstraat 4",
+                "addressLocality": "Breda",
+                "postalCode": "4811 ZE",
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 52.15517,
+                "longitude": 5.38721
+            },
+            "url": "https://inspirebreda.netlify.app",
+            "sameAs": [
+                "https://www.instagram.com/inspirebreda/",
+                "https://www.facebook.com/inspirecoffeecompany/",
+                "https://twitter.com/inspirecoffee"
+            ],
+            "telephone": "+31765153272",
+            "email": "breda@inspirecoffee.com"
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Monday",
+                    "opens": "09:00",
+                    "closes": "17:00"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday"
+                    ],
+                    "opens": "09:00",
+                    "closes": "18:00"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Sunday",
+                    "opens": "10:30",
+                    "closes": "18:00"
+                }
+            ],
+            "hasMenu": [
+                "https://inspirebreda.netlify.app/menu/lunch-1.pdf",
+                "https://inspirebreda.netlify.app/menu/drank-3.pdf",
+                "https://inspirebreda.netlify.app/menu/drank-1.pdf",
+                "https://inspirebreda.netlify.app/menu/drank-2.pdf"
+            ]
+        }
+    </script>
 </body>
 
 </html>
