@@ -155,7 +155,7 @@
         </section>
     </main>
     <footer id="contact" class="bg-inspire-brown">
-        <div class="pt-16 pb-8 px-8 max-w-5xl m-auto space-y-8 min-h-screen flex flex-col justify-between sm:min-h-0 sm:block">
+        <div class="pt-16 pb-8 px-8 max-w-5xl m-auto min-h-screen flex flex-col justify-between sm:min-h-0 sm:block">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <div class="space-y-4">
                     <h2 class="font-oswald uppercase tracking-wide text-white">
@@ -196,6 +196,19 @@
                 </div>
                 <div class="space-y-4">
                     <h2 class="font-oswald uppercase tracking-wide text-white">
+                        Afhaalloket
+                    </h2>
+                    <table x-data class="text-inspire-brown-light font-light">
+                        <template x-for="openingstijd in $store.data.openingstijdenAfhaalloket">
+                            <tr>
+                                <td class="pr-8" x-text="openingstijd.dag"></td>
+                                <td x-text="openingstijd.tijd"></td>
+                            </tr>
+                        </template>
+                    </table>
+                </div>
+                <div class="space-y-4">
+                    <h2 class="font-oswald uppercase tracking-wide text-white">
                         Social
                     </h2>
                     <nav class="text-inspire-brown-light">
@@ -215,7 +228,10 @@
                     </nav>
                 </div>
             </div>
-            <div class="text-sm text-center w-full font-light text-inspire-brown-light border-t border-opacity-25 border-inspire-brown-light">
+            <p class="mt-8 text-sm text-center text-inspire-brown-light font-light italic">
+                Gewijzigd: Zondag 19 december 2021
+            </p>
+            <div class="mt-8 text-sm text-center w-full font-light text-inspire-brown-light border-t border-opacity-25 border-inspire-brown-light">
                 <p x-data class="pt-8">
                     Copyright &copy; <span x-text="new Date().getFullYear()"></span> Inspire Coffee Company. Alle rechten voorbehouden.
                 </p>
@@ -244,6 +260,15 @@
                     { href: 'menu/drank-2.pdf', src: 'img/drank-2.jpg', name: 'Bier & Cocktails' }
                 ],
                 openingstijden: [
+                    { dag: 'Maandag', tijd: '-' },
+                    { dag: 'Dinsdag', tijd: '-' },
+                    { dag: 'Woensdag', tijd: '-' },
+                    { dag: 'Donderdag', tijd: '-' },
+                    { dag: 'Vrijdag', tijd: '-' },
+                    { dag: 'Zaterdag', tijd: '-' },
+                    { dag: 'Zondag', tijd: '-' }
+                ],
+                openingstijdenAfhaalloket: [
                     { dag: 'Maandag', tijd: '09:00 - 17:00' },
                     { dag: 'Dinsdag', tijd: '09:00 - 17:00' },
                     { dag: 'Woensdag', tijd: '08:00 - 20:00' },
@@ -297,39 +322,59 @@
             ],
             "telephone": "+31765153272",
             "email": "breda@inspirecoffee.com"
-            "openingHoursSpecification": [
-                {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": [
-                        "Monday",
-                        "Tuesday"
-                    ],
-                    "opens": "09:00",
-                    "closes": "17:00"
-                },
-                {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": [
-                        "Wednesday",
-                        "Thursday",
-                        "Friday",
-                        "Saturday"
-                    ],
-                    "opens": "08:00",
-                    "closes": "20:00"
-                },
-                {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": "Sunday",
-                    "opens": "09:30",
-                    "closes": "20:00"
-                }
-            ],
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                "opens": "00:00",
+                "closes": "00:00"
+            },
             "hasMenu": [
                 "https://inspirebreda.netlify.app/menu/lunch-1.pdf",
                 "https://inspirebreda.netlify.app/menu/drank-3.pdf",
                 "https://inspirebreda.netlify.app/menu/drank-1.pdf",
                 "https://inspirebreda.netlify.app/menu/drank-2.pdf"
+            ],
+            "department": [
+                {
+                    "@type": "CafeOrCoffeeShop",
+                    "name": "Inspire Afhaalloket",
+                    "openingHoursSpecification": [
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                                "Monday",
+                                "Tuesday"
+                            ],
+                            "opens": "09:00",
+                            "closes": "17:00"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                                "Wednesday",
+                                "Thursday",
+                                "Friday",
+                                "Saturday"
+                            ],
+                            "opens": "08:00",
+                            "closes": "20:00"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": "Sunday",
+                            "opens": "09:30",
+                            "closes": "20:00"
+                        }
+                    ]
+                }
             ]
         }
     </script>
