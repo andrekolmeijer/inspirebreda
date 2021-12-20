@@ -21,7 +21,7 @@
     <meta property="og:title" content="Inspire Breda - Coffee, Cafe & Cocktails" />
     <meta property="og:description" content="Genieten van de lekkerste koffie, gezonde lunch óf een speciaalbiertje." />
     <meta property="og:url" content="https://inspirebreda.netlify.app" />
-    <meta property="og:image" content="https://inspirebreda.netlify.app/img/banner-1-mobile.jpg" />
+    <meta property="og:image" content="https://inspirebreda.netlify.app/img/banner-mobile.jpg" />
     <meta property="og:image:alt" content="Vooraanzicht van Inspire Breda" />
     <meta name="twitter:card" content="summary_large_image" />
     <!-- Stylesheet -->
@@ -92,10 +92,10 @@
     </div>
     <div class="overflow-hidden">
         <img class="hidden sm:block h-72 w-full object-cover object-bottom"
-             src="img/banner-1.jpg"
+             src="img/banner.jpg"
              alt="Vooraanzicht van Inspire Breda">
         <img class="block sm:hidden h-80 w-full object-cover object-bottom"
-             src="img/banner-1-mobile.jpg"
+             src="img/banner-mobile.jpg"
              alt="Vooraanzicht van Inspire Breda">
     </div>
     <main>
@@ -303,6 +303,7 @@
         {
             "@context": "https://schema.org",
             "@type": "CafeOrCoffeeShop",
+            "name": "Inspire Coffee Company",
             "logo": "https://inspirebreda.netlify.app/img/inspire-logo-small.png",
             "image": [
                 "https://inspirebreda.netlify.app/img/carousel-1.jpg",
@@ -314,7 +315,6 @@
                 "https://inspirebreda.netlify.app/img/carousel-7.jpg",
                 "https://inspirebreda.netlify.app/img/carousel-8.jpg"
             ],
-            "name": "Inspire Coffee Company",
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Veemarktstraat 4",
@@ -358,6 +358,14 @@
                 {
                     "@type": "CafeOrCoffeeShop",
                     "name": "Inspire Afhaalloket",
+                    "image": "https://inspirebreda.netlify.app/img/banner-mobilejpg",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Veemarktstraat 4",
+                        "addressLocality": "Breda",
+                        "postalCode": "4811 ZE"
+                    },
+                    "telephone": "+31765153272",
                     "openingHoursSpecification": [
                         {
                             "@type": "OpeningHoursSpecification",
