@@ -8,7 +8,7 @@
     <title>Inspire Breda - Coffee, Cafe &amp; Cocktails</title>
     <meta name="description" content="Met uitzicht op de Grote Markt van Breda genieten van de lekkerste koffie, gezonde lunch en afsluiten met een speciaalbiertje of de perfecte cocktail.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://inspirebreda.netlify.app">
+    <link rel="canonical" href="https://inspirebreda.nl">
     <meta name="author" content="Honk Twee Breda">
     <meta name="web-author" content="André Kolmeijer">
     <meta name="copyright" content="Inspire Coffee Company" />
@@ -20,8 +20,8 @@
     <meta property="og:locale" content="nl-NL" />
     <meta property="og:title" content="Inspire Breda - Coffee, Cafe & Cocktails" />
     <meta property="og:description" content="Genieten van de lekkerste koffie, gezonde lunch óf een speciaalbiertje." />
-    <meta property="og:url" content="https://inspirebreda.netlify.app" />
-    <meta property="og:image" content="https://inspirebreda.netlify.app/img/banner-mobile.jpg" />
+    <meta property="og:url" content="https://inspirebreda.nl" />
+    <meta property="og:image" content="https://inspirebreda.nl/img/banner-mobile.jpg" />
     <meta property="og:image:alt" content="Vooraanzicht van Inspire Breda" />
     <meta name="twitter:card" content="summary_large_image" />
     <!-- Stylesheet -->
@@ -302,98 +302,122 @@
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "CafeOrCoffeeShop",
-            "name": "Inspire Coffee Company",
-            "logo": "https://inspirebreda.netlify.app/img/inspire-logo-small.png",
-            "image": [
-                "https://inspirebreda.netlify.app/img/carousel-1.jpg",
-                "https://inspirebreda.netlify.app/img/carousel-2.jpg",
-                "https://inspirebreda.netlify.app/img/carousel-3.jpg",
-                "https://inspirebreda.netlify.app/img/carousel-4.jpg",
-                "https://inspirebreda.netlify.app/img/carousel-5.jpg",
-                "https://inspirebreda.netlify.app/img/carousel-6.jpg",
-                "https://inspirebreda.netlify.app/img/carousel-7.jpg",
-                "https://inspirebreda.netlify.app/img/carousel-8.jpg"
-            ],
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Veemarktstraat 4",
-                "addressLocality": "Breda",
-                "postalCode": "4811 ZE"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 52.15517,
-                "longitude": 5.38721
-            },
-            "url": "https://inspirebreda.netlify.app",
-            "sameAs": [
-                "https://www.instagram.com/inspirebreda/",
-                "https://www.facebook.com/inspirecoffeecompany/",
-                "https://twitter.com/inspirecoffee"
-            ],
-            "telephone": "+31765153272",
-            "email": "breda@inspirecoffee.com",
-            "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday",
-                    "Sunday"
-                ],
-                "opens": "00:00",
-                "closes": "00:00"
-            },
-            "hasMenu": [
-                "https://inspirebreda.netlify.app/menu/lunch-1.pdf",
-                "https://inspirebreda.netlify.app/menu/drank-3.pdf",
-                "https://inspirebreda.netlify.app/menu/drank-1.pdf",
-                "https://inspirebreda.netlify.app/menu/drank-2.pdf"
-            ],
-            "department": [
+            "@graph": [
                 {
                     "@type": "CafeOrCoffeeShop",
-                    "name": "Inspire Afhaalloket",
-                    "image": "https://inspirebreda.netlify.app/img/banner-mobilejpg",
+                    "name": "Inspire Coffee Company",
+                    "logo": "https://inspirebreda.nl/img/inspire-logo-small.png",
+                    "image": [
+                        "https://inspirebreda.nl/img/carousel-1.jpg",
+                        "https://inspirebreda.nl/img/carousel-2.jpg",
+                        "https://inspirebreda.nl/img/carousel-3.jpg",
+                        "https://inspirebreda.nl/img/carousel-4.jpg",
+                        "https://inspirebreda.nl/img/carousel-5.jpg",
+                        "https://inspirebreda.nl/img/carousel-6.jpg",
+                        "https://inspirebreda.nl/img/carousel-7.jpg",
+                        "https://inspirebreda.nl/img/carousel-8.jpg"
+                    ],
                     "address": {
                         "@type": "PostalAddress",
                         "streetAddress": "Veemarktstraat 4",
                         "addressLocality": "Breda",
                         "postalCode": "4811 ZE"
                     },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 52.15517,
+                        "longitude": 5.38721
+                    },
+                    "url": "https://inspirebreda.nl",
+                    "sameAs": [
+                        "https://www.instagram.com/inspirebreda/",
+                        "https://www.facebook.com/inspirecoffeecompany/",
+                        "https://twitter.com/inspirecoffee"
+                    ],
                     "telephone": "+31765153272",
-                    "openingHoursSpecification": [
+                    "email": "breda@inspirecoffee.com",
+                    "openingHoursSpecification": {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Monday",
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday",
+                            "Sunday"
+                        ],
+                        "opens": "00:00",
+                        "closes": "00:00"
+                    },
+                    "hasMenu": [
+                        "https://inspirebreda.nl/menu/lunch-1.pdf",
+                        "https://inspirebreda.nl/menu/drank-3.pdf",
+                        "https://inspirebreda.nl/menu/drank-1.pdf",
+                        "https://inspirebreda.nl/menu/drank-2.pdf"
+                    ],
+                    "department": [
                         {
-                            "@type": "OpeningHoursSpecification",
-                            "dayOfWeek": [
-                                "Monday",
-                                "Tuesday"
-                            ],
-                            "opens": "09:00",
-                            "closes": "17:00"
-                        },
-                        {
-                            "@type": "OpeningHoursSpecification",
-                            "dayOfWeek": [
-                                "Wednesday",
-                                "Thursday",
-                                "Friday",
-                                "Saturday"
-                            ],
-                            "opens": "08:00",
-                            "closes": "20:00"
-                        },
-                        {
-                            "@type": "OpeningHoursSpecification",
-                            "dayOfWeek": "Sunday",
-                            "opens": "09:30",
-                            "closes": "20:00"
+                            "@type": "CafeOrCoffeeShop",
+                            "name": "Inspire Afhaalloket",
+                            "image": "https://inspirebreda.nl/img/banner-mobile.jpg",
+                            "address": {
+                                "@type": "PostalAddress",
+                                "streetAddress": "Veemarktstraat 4",
+                                "addressLocality": "Breda",
+                                "postalCode": "4811 ZE"
+                            },
+                            "telephone": "+31765153272",
+                            "openingHoursSpecification": [
+                                {
+                                    "@type": "OpeningHoursSpecification",
+                                    "dayOfWeek": [
+                                        "Monday",
+                                        "Tuesday"
+                                    ],
+                                    "opens": "09:00",
+                                    "closes": "17:00"
+                                },
+                                {
+                                    "@type": "OpeningHoursSpecification",
+                                    "dayOfWeek": [
+                                        "Wednesday",
+                                        "Thursday",
+                                        "Friday",
+                                        "Saturday"
+                                    ],
+                                    "opens": "08:00",
+                                    "closes": "20:00"
+                                },
+                                {
+                                    "@type": "OpeningHoursSpecification",
+                                    "dayOfWeek": "Sunday",
+                                    "opens": "09:30",
+                                    "closes": "20:00"
+                                }
+                            ]
                         }
                     ]
+                },
+                {
+                    "@type": "SpecialAnnouncement",
+                    "name": "Zaak gesloten, afhaalloket geopend.",
+                    "text": "Let op: i.v.m. de feestdagen en COVID-19 hanteren wij afwijkende openingstijden. Kijk op de website voor meer informatie!",
+                    "datePosted": "2021-12-19T08:00",
+                    "expires": "2022-01-14T23:59",
+                    "announcementLocation": {
+                        "@type": "CafeOrCoffeeShop",
+                        "name": "Inspire Coffee Company",
+                        "image" : "https://inspirebreda.nl/img/banner-mobile.jpg",
+                        "url": "https://inspirebreda.nl",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Veemarktstraat 4",
+                            "addressLocality": "Breda",
+                            "postalCode": "4811 ZE"
+                        },
+                        "telephone": "+31765153272"
+                    }
                 }
             ]
         }
