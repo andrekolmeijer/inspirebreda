@@ -7,11 +7,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'inspire-orange': '#F98A0C', // #F28C00 inspirecoffee.com / #F98A0C menukaart
-        'inspire-orange-logo': '#F28C00',
-        'inspire-brown': '#331606',
-        'inspire-brown-light': '#DDC5B8',
-        'inspire-blue-gray': '#B0C4CF',
+        'inspire-orange': '#F98A0C', // #F28C00 inspirecoffee.com / #F98A0C menukaart / #FF914D honktwee
+        'inspire-brown': '#331606', // #331606 menukaart / #331606 honktwee
+        'inspire-brown-light': '#DDC5B8', // #DDC5B8 menukaart / #C49463 honktwee
+        'inspire-beige': '#EFDAC5', // #EFDAC5 honktwee (achtergrond kleur)
+        'inspire-blue-gray': '#B0C4CF', // Verf kleur voorgevel (zie cover photo mobiel)
         'instagram-blue': '#0095F6',
         'instagram-blue-dark': '#0074CC',
       },

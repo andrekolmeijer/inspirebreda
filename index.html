@@ -52,16 +52,16 @@
                  alt="Inspire Logo">
         </div>
         <nav class="font-condensed text-lg text-inspire-brown">
-            <ul class="flex space-x-8">
+            <ul class="flex space-x-2">
                 <li class="hidden sm:block">
-                    <a class="py-4 hover:text-inspire-orange focus:text-inspire-orange active:text-inspire-brown transition-colors duration-200"
+                    <a class="py-1 px-3 hover:text-inspire-orange focus:text-inspire-orange active:text-inspire-brown transition-colors duration-200"
                        href="#menu"
                        rel="nofollow">
                         menukaarten
                     </a>
                 </li>
                 <li class="hidden sm:block">
-                    <a class="py-4 hover:text-inspire-orange focus:text-inspire-orange active:text-inspire-brown transition-colors duration-200"
+                    <a class="py-1 px-3 hover:text-inspire-orange focus:text-inspire-orange active:text-inspire-brown transition-colors duration-200"
                        href="#contact"
                        rel="nofollow">
                         contact
@@ -78,7 +78,19 @@
             </ul>
         </nav>
     </header>
-    <div class="overflow-hidden relative">
+    <div class="bg-red-600">
+        <div class="max-w-5xl m-auto group">
+            <a href="#contact" rel="nofollow">
+                <p class="px-8 py-4 text-sm font-base text-center text-white">
+                    Let op: i.v.m. de feestdagen en COVID-19 hanteren wij afwijkende openingstijden.
+                    <span class="group-hover:underline">Meer info</span><svg class="h-3 w-3 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </p>
+            </a>
+        </div>
+    </div>
+    <div class="overflow-hidden">
         <img class="hidden sm:block h-72 w-full object-cover object-bottom"
              src="img/banner-1.jpg"
              alt="Vooraanzicht van Inspire Breda">
@@ -93,11 +105,11 @@
                     Welkom bij Inspire
                 </h1>
                 <p class="font-light text-base sm:columns-2 gap-8 hyphens-auto py-8">
-                    Met uitzicht op de Grote Markt van Breda genieten van de lekkerste koffie, gezonde lunch en afsluiten met een speciaalbiertje of de perfecte cocktail? Inspire heeft het allemaal in huis! Plof neer op onze bank of borrel met vrienden aan onze lange tafels. Met de expertise van ons personeel weet je zeker dat je het juiste drankje voorgeschoteld krijgt. Liever een dagje rustig werken? Met onze razendsnelle internetverbinding ben je klaar voor elke meeting. Kom gezellig langs en laat je inspireren!
+                    Met uitzicht op de Grote Markt van Breda genieten van de lekkerste koffie, gezonde lunch en afsluiten met een speciaalbiertje of de perfecte cocktail? Inspire heeft het allemaal in huis! Plof neer op onze bank of borrel met vrienden aan onze lange tafels. Met de exper&shy;tise van ons personeel weet je zeker dat je het juiste drankje voorgeschoteld krijgt. Liever een dagje rustig werken? Met onze razendsnelle internetverbinding ben je klaar voor elke meeting. Kom gezellig langs en laat je inspireren!
                 </p>
             </div>
             <div class="sm:mx-8">
-                <div x-data class="flex sm:grid sm:grid-cols-12 grid-rows-4 h-[300px] sm:h-[648px] py-4 gap-3 snap-x snap-mandatory overflow-x-auto scrollbar-hidden">
+                <div x-data class="flex sm:grid grid-cols-12 grid-rows-4 h-[300px] sm:h-[648px] py-4 gap-3 snap-x snap-mandatory overflow-x-auto scrollbar-hidden">
                     <template x-for="image in $store.data.images">
                         <div class="h-full flex-shrink-0 max-w-[300px] sm:max-w-none second:snap-start snap-center last:snap-end snap-always second:pl-8 last:pr-8 sm:second:pl-0 sm:last:pr-0"
                              :class="image.span">
@@ -115,11 +127,10 @@
                        target="_blank"
                        aria-label="instagram"
                        class="font-medium text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-pink-500 to-indigo-500">
-                        @inspirebreda
-                    </a>
+                        @inspirebreda</a>
                     om als eerste op de hoogte te zijn van onze acties, specials en ontwikkelingen!
                 </p>
-                <div class="rounded w-full sm:w-auto">
+                <div class="rounded flex-shrink-0 w-full sm:w-auto">
                     <a href="https://www.instagram.com/inspirebreda/"
                        target="_blank"
                        aria-label="instagram"
@@ -155,7 +166,7 @@
         </section>
     </main>
     <footer id="contact" class="bg-inspire-brown">
-        <div class="pt-16 pb-8 px-8 max-w-5xl m-auto space-y-8 min-h-screen flex flex-col justify-between sm:min-h-0 sm:block">
+        <div class="pt-16 pb-8 px-8 max-w-5xl m-auto flex flex-col justify-between sm:min-h-0 sm:block">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <div class="space-y-4">
                     <h2 class="font-oswald uppercase tracking-wide text-white">
@@ -196,6 +207,19 @@
                 </div>
                 <div class="space-y-4">
                     <h2 class="font-oswald uppercase tracking-wide text-white">
+                        Afhaalloket
+                    </h2>
+                    <table x-data class="text-inspire-brown-light font-light">
+                        <template x-for="openingstijd in $store.data.openingstijdenAfhaalloket">
+                            <tr>
+                                <td class="pr-8" x-text="openingstijd.dag"></td>
+                                <td x-text="openingstijd.tijd"></td>
+                            </tr>
+                        </template>
+                    </table>
+                </div>
+                <div class="space-y-4">
+                    <h2 class="font-oswald uppercase tracking-wide text-white">
                         Social
                     </h2>
                     <nav class="text-inspire-brown-light">
@@ -215,7 +239,10 @@
                     </nav>
                 </div>
             </div>
-            <div class="text-sm text-center w-full font-light text-inspire-brown-light border-t border-opacity-25 border-inspire-brown-light">
+            <p class="mt-8 text-sm text-center text-inspire-brown-light font-light italic">
+                Gewijzigd: <span x-data x-text="$store.data.openingstijdenGewijzigd.datum"></span>
+            </p>
+            <div class="mt-8 text-sm text-center w-full font-light text-inspire-brown-light border-t border-opacity-25 border-inspire-brown-light">
                 <p x-data class="pt-8">
                     Copyright &copy; <span x-text="new Date().getFullYear()"></span> Inspire Coffee Company. Alle rechten voorbehouden.
                 </p>
@@ -228,13 +255,13 @@
         document.addEventListener('alpine:init', () => {
             Alpine.store('data', {
                 images: [
-                    { src: 'img/carousel-1.jpg', span: 'col-span-4 row-span-2', alt: 'Twee maal pornstar martini' },
-                    { src: 'img/carousel-2.jpg', span: 'col-span-3 row-span-2', alt: 'Twee white russians die bereid worden' },
-                    { src: 'img/carousel-3.jpg', span: 'col-span-5 row-span-2', alt: 'Jehan en Rob maken de white russians' },
+                    { src: 'img/carousel-1.jpg', span: 'col-span-4 row-span-2', alt: 'Twee maal Dark & Stormy cocktail' },
+                    { src: 'img/carousel-2.jpg', span: 'col-span-3 row-span-2', alt: 'Twee White Russians die bereid worden' },
+                    { src: 'img/carousel-3.jpg', span: 'col-span-5 row-span-2', alt: 'Jehan en Rob maken Espresso Martini' },
                     { src: 'img/carousel-4.jpg', span: 'col-span-4 row-span-2', alt: 'Inspire specialiteit C-star met kruidnoten' },
-                    { src: 'img/carousel-5.jpg', span: 'col-span-4 row-span-2', alt: 'Brownie vanaf bovenaanzicht' },
-                    { src: 'img/carousel-6.jpg', span: 'col-span-4 row-span-1', alt: 'Werkplekken boven' },
-                    { src: 'img/carousel-7.jpg', span: 'col-span-2 row-span-1', alt: 'Koffie van bovenaanzicht' },
+                    { src: 'img/carousel-5.jpg', span: 'col-span-4 row-span-2', alt: 'Een yogurt, lemon and lime swirl cake' },
+                    { src: 'img/carousel-6.jpg', span: 'col-span-4 row-span-1', alt: 'Bovenverdieping Inspire Breda' },
+                    { src: 'img/carousel-7.jpg', span: 'col-span-2 row-span-1', alt: 'Martini Espresso van bovenaf' },
                     { src: 'img/carousel-8.jpg', span: 'col-span-2 row-span-1', alt: 'Verse appeltaart' }
                 ],
                 menukaarten: [
@@ -244,14 +271,24 @@
                     { href: 'menu/drank-2.pdf', src: 'img/drank-2.jpg', name: 'Bier & Cocktails' }
                 ],
                 openingstijden: [
-                    { dag: 'Maandag', tijd: '09:00 - 17:00' },
-                    { dag: 'Dinsdag', tijd: '09:00 - 18:00' },
-                    { dag: 'Woensdag', tijd: '09:00 - 18:00' },
-                    { dag: 'Donderdag', tijd: '09:00 - 18:00' },
-                    { dag: 'Vrijdag', tijd: '09:00 - 18:00' },
-                    { dag: 'Zaterdag', tijd: '09:00 - 18:00' },
-                    { dag: 'Zondag', tijd: '10:30 - 18:00' }
+                    { dag: 'Maandag', tijd: '-' },
+                    { dag: 'Dinsdag', tijd: '-' },
+                    { dag: 'Woensdag', tijd: '-' },
+                    { dag: 'Donderdag', tijd: '-' },
+                    { dag: 'Vrijdag', tijd: '-' },
+                    { dag: 'Zaterdag', tijd: '-' },
+                    { dag: 'Zondag', tijd: '-' }
                 ],
+                openingstijdenAfhaalloket: [
+                    { dag: 'Maandag', tijd: '09:00 - 17:00' },
+                    { dag: 'Dinsdag', tijd: '09:00 - 17:00' },
+                    { dag: 'Woensdag', tijd: '08:00 - 20:00' },
+                    { dag: 'Donderdag', tijd: '08:00 - 20:00' },
+                    { dag: 'Vrijdag', tijd: '08:00 - 20:00' },
+                    { dag: 'Zaterdag', tijd: '08:00 - 20:00' },
+                    { dag: 'Zondag', tijd: '09:30 - 20:00' }
+                ],
+                openingstijdenGewijzigd: { datum: 'Zondag 19 december 2021' },
                 socials: [
                     { href: 'https://www.facebook.com/inspirecoffeecompany/', label: 'facebook', svgClass: 'bi-facebook', svgPath: 'M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z' },
                     { href: 'https://twitter.com/inspirecoffee', label: 'twitter', svgClass: 'bi-twitter', svgPath: 'M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z' },
@@ -259,6 +296,99 @@
                 ]
             })
         })
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CafeOrCoffeeShop",
+            "logo": "https://inspirebreda.netlify.app/img/inspire-logo-small.png"
+            "image": [
+                "https://inspirebreda.netlify.app/img/carousel-1.jpg",
+                "https://inspirebreda.netlify.app/img/carousel-2.jpg",
+                "https://inspirebreda.netlify.app/img/carousel-3.jpg",
+                "https://inspirebreda.netlify.app/img/carousel-4.jpg",
+                "https://inspirebreda.netlify.app/img/carousel-5.jpg",
+                "https://inspirebreda.netlify.app/img/carousel-6.jpg",
+                "https://inspirebreda.netlify.app/img/carousel-7.jpg",
+                "https://inspirebreda.netlify.app/img/carousel-8.jpg"
+            ],
+            "name": "Inspire Coffee Company",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Veemarktstraat 4",
+                "addressLocality": "Breda",
+                "postalCode": "4811 ZE",
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 52.15517,
+                "longitude": 5.38721
+            },
+            "url": "https://inspirebreda.netlify.app",
+            "sameAs": [
+                "https://www.instagram.com/inspirebreda/",
+                "https://www.facebook.com/inspirecoffeecompany/",
+                "https://twitter.com/inspirecoffee"
+            ],
+            "telephone": "+31765153272",
+            "email": "breda@inspirecoffee.com"
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                "opens": "00:00",
+                "closes": "00:00"
+            },
+            "hasMenu": [
+                "https://inspirebreda.netlify.app/menu/lunch-1.pdf",
+                "https://inspirebreda.netlify.app/menu/drank-3.pdf",
+                "https://inspirebreda.netlify.app/menu/drank-1.pdf",
+                "https://inspirebreda.netlify.app/menu/drank-2.pdf"
+            ],
+            "department": [
+                {
+                    "@type": "CafeOrCoffeeShop",
+                    "name": "Inspire Afhaalloket",
+                    "openingHoursSpecification": [
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                                "Monday",
+                                "Tuesday"
+                            ],
+                            "opens": "09:00",
+                            "closes": "17:00"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                                "Wednesday",
+                                "Thursday",
+                                "Friday",
+                                "Saturday"
+                            ],
+                            "opens": "08:00",
+                            "closes": "20:00"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": "Sunday",
+                            "opens": "09:30",
+                            "closes": "20:00"
+                        }
+                    ]
+                }
+            ]
+        }
     </script>
 </body>
 
