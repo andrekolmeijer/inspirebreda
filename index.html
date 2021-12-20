@@ -109,7 +109,7 @@
                 </p>
             </div>
             <div class="sm:mx-8">
-                <div x-data class="flex sm:grid sm:grid-cols-12 grid-rows-4 h-[300px] sm:h-[648px] py-4 gap-3 snap-x snap-mandatory overflow-x-auto scrollbar-hidden">
+                <div x-data class="flex sm:grid grid-cols-12 grid-rows-4 h-[300px] sm:h-[648px] py-4 gap-3 snap-x snap-mandatory overflow-x-auto scrollbar-hidden">
                     <template x-for="image in $store.data.images">
                         <div class="h-full flex-shrink-0 max-w-[300px] sm:max-w-none second:snap-start snap-center last:snap-end snap-always second:pl-8 last:pr-8 sm:second:pl-0 sm:last:pr-0"
                              :class="image.span">
