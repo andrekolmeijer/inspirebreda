@@ -591,6 +591,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   scroll-snap-stop: always;
 }
 
+.scroll-mt-8 {
+  scroll-margin-top: 2rem;
+}
+
+.-scroll-mt-8 {
+  scroll-margin-top: -2rem;
+}
+
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
