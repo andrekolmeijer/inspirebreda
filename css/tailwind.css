@@ -845,6 +845,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   scroll-margin-top: 2rem;
 }
 
+.scroll-mt-24 {
+  scroll-margin-top: 6rem;
+}
+
+.scroll-mt-32 {
+  scroll-margin-top: 8rem;
+}
+
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
@@ -1596,6 +1604,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: none;
   }
 
+  .sm\:scroll-mt-32 {
+    scroll-margin-top: 8rem;
+  }
+
   .sm\:columns-2 {
     -moz-columns: 2;
          columns: 2;
@@ -1723,6 +1735,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1024px) {
   .lg\:h-\[300px\] {
     height: 300px;
+  }
+
+  .lg\:scroll-mt-32 {
+    scroll-margin-top: 8rem;
+  }
+
+  .lg\:scroll-mt-36 {
+    scroll-margin-top: 9rem;
+  }
+
+  .lg\:scroll-mt-40 {
+    scroll-margin-top: 10rem;
   }
 
   .lg\:grid-cols-3 {
