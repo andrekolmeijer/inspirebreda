@@ -595,6 +595,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   scroll-snap-stop: always;
 }
 
+.-scroll-m-8 {
+  scroll-margin: -2rem;
+}
+
+.scroll-m-8 {
+  scroll-margin: 2rem;
+}
+
 .-scroll-mt-8 {
   scroll-margin-top: -2rem;
 }
