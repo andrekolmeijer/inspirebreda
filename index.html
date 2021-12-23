@@ -199,8 +199,8 @@
                     <table x-data class="text-inspire-brown-light font-light">
                         <template x-for="openingstijd in $store.data.openingstijden">
                             <tr>
-                                <td class="pr-8" x-text="openingstijd.dag"></td>
-                                <td x-text="openingstijd.tijd"></td>
+                                <td class="align-top pr-8" x-text="openingstijd.dag"></td>
+                                <td class="align-top" x-text="openingstijd.tijd"></td>
                             </tr>
                         </template>
                     </table>
@@ -212,8 +212,9 @@
                     <table x-data class="text-inspire-brown-light font-light">
                         <template x-for="openingstijd in $store.data.openingstijdenAfhaalloket">
                             <tr>
-                                <td class="pr-8" x-text="openingstijd.dag"></td>
-                                <td x-text="openingstijd.tijd"></td>
+                                <td class="align-top pr-8" x-show="!openingstijd.extra" x-text="openingstijd.dag"></td>
+                                <td class="align-top pr-8" x-show="openingstijd.extra" x-html="`${openingstijd.dag} <br> <em>${openingstijd.extra}</em>`"></td>
+                                <td class="align-top" x-text="openingstijd.tijd"></td>
                             </tr>
                         </template>
                     </table>
@@ -284,9 +285,9 @@
                     { dag: 'Dinsdag', tijd: '09:00 - 17:00' },
                     { dag: 'Woensdag', tijd: '08:00 - 20:00' },
                     { dag: 'Donderdag', tijd: '08:00 - 20:00' },
-                    { dag: 'Vrijdag', tijd: '08:00 - 20:00' },
-                    { dag: 'Zaterdag', tijd: '08:00 - 20:00' },
-                    { dag: 'Zondag', tijd: '09:30 - 20:00' }
+                    { dag: 'Vrijdag', tijd: '08:00 - 22:00', extra: '(Kerstavond)' }, // 08:00 - 20:00
+                    { dag: 'Zaterdag', tijd: '08:00 - 18:00', extra: '(Eerste Kerstdag)' }, // 08:00 - 20:00
+                    { dag: 'Zondag', tijd: '10:00 - 22:00', extra: '(Tweede Kerstdag)' } // 09:30 - 20:00
                 ],
                 openingstijdenGewijzigd: { datum: 'Zondag 19 december 2021' },
                 socials: [
