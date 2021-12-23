@@ -80,7 +80,7 @@
     </header>
     <div class="bg-red-500">
         <div class="max-w-5xl m-auto group">
-            <a href="#contact" rel="nofollow">
+            <a href="#openingstijden" rel="nofollow">
                 <p class="px-8 py-4 text-sm font-base text-center text-white">
                     Let op: i.v.m. de feestdagen en COVID-19 hanteren wij afwijkende openingstijden.
                     <span class="group-hover:underline">Meer info</span><svg class="h-3 w-3 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -90,13 +90,39 @@
             </a>
         </div>
     </div>
-    <div class="overflow-hidden">
+    <!-- <div class="overflow-hidden">
         <img class="hidden sm:block h-72 w-full object-cover object-bottom"
              src="img/banner.jpg"
              alt="Vooraanzicht van Inspire Breda">
         <img class="block sm:hidden h-80 w-full object-cover object-bottom"
              src="img/banner-mobile.jpg"
              alt="Vooraanzicht van Inspire Breda">
+    </div> -->
+    <div class="relative overflow-hidden">
+        <img class="absolute inset-0 w-full h-full object-cover"
+             src="img/christmas-stand.jpg"
+             alt="Het afhaalloket van Inspire">
+        <div class="absolute inset-0 w-full h-full bg-gradient-to-br from-black/60"></div>
+        <div class="relative h-80 sm:h-96 max-w-5xl m-auto p-8 flex flex-col justify-between items-start">
+            <div class="w-full">
+                <p class="text-lg font-normal text-inspire-orange">
+                    Inspire's afhaalloket
+                </p>
+                <h2 class="sm:hidden mt-2 text-2xl font-normal text-white">
+                    Met kerst geopend!
+                </h2>
+                <h2 class="hidden sm:block mt-2 w-2/3 text-3xl font-normal text-white">
+                    Wij zijn met kerst geopend!
+                </h2>
+            </div>
+            <a href="#wintermenu"
+               rel="nofollow"
+               class="w-full sm:w-auto text-center px-4 py-2 rounded bg-white text-base tracking-wide font-normal hover:underline focus:underline transition-colors duration-200">
+                Meer informatie<svg class="h-3.5 w-3.5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </a>
+        </div>
     </div>
     <main>
         <section class="max-w-5xl m-auto">
@@ -140,6 +166,42 @@
                 </div>
             </div>
         </section>
+        <section id="wintermenu"
+                 class="scroll-mt-8 lg:scroll-mt-40 max-w-5xl m-auto px-8">
+            <div class="py-16 border-t border-gray-200 md:grid grid-cols-2">
+                <div class="relative aspect-[10/9] w-[85%] sm:w-[70%] md:w-auto md:h-[300px] m-auto">
+                    <div class="absolute h-[90%] sm:h-[80%] aspect-square -rotate-6 top-[5%] sm:top-[10%] left-0 z-10 shadow-lg">
+                        <img class="w-full h-full rounded object-cover"
+                             src="img/speciale-openingstijden.jpg"
+                             alt="Afwijkende openingstijden">
+                    </div>
+                    <div class="absolute h-[100%] aspect-[21/29] rotate-12 top-0 right-0 shadow-md -translate-x-[7%]">
+                        <img class="w-full h-full rounded-lg object-cover"
+                             src="img/inspire-winter-menu.jpg"
+                             alt="Het Inspire winter menu">
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-center mt-16 md:mt-0">
+                    <div class="w-full sm:w-3/4 md:w-full m-auto">
+                        <h2 class="w-full text-center px-8 font-oswald uppercase tracking-wide text-2xl text-inspire-orange">
+                            Inspire's Winter menu
+                        </h2>
+                        <p class="mt-8 font-light text-center">
+                            Het afhaalloket van Inspire is zelfs met de kerst geopend. Kom langs voor een warme versnapering met deze koude dagen!
+                        </p>
+                        <div class="w-full flex justify-center items-center mt-8">
+                            <a href="menu/inspire-winter-menu.pdf"
+                               target="_blank"
+                               class="text-lg font-normal hover:underline">
+                                Bekijk het menu<svg class="h-4 w-4 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="menu" class="bg-inspire-orange">
             <div class="pt-16 pb-8 max-w-5xl m-auto">
                 <h2 class="w-full sm:text-center pl-8 sm:px-8 font-oswald uppercase tracking-wide text-2xl text-white">
@@ -167,7 +229,7 @@
     </main>
     <footer id="contact" class="bg-inspire-brown -scroll-mt-8">
         <div class="pt-16 pb-8 px-8 max-w-5xl m-auto flex flex-col justify-between sm:block">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="space-y-4">
                     <h2 class="font-oswald uppercase tracking-wide text-white">
                         Contact
@@ -192,15 +254,15 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="space-y-4">
+                <div id="openingstijden" class="space-y-4 scroll-m-8">
                     <h2 class="font-oswald uppercase tracking-wide text-white">
                         Openingstijden
                     </h2>
                     <table x-data class="text-inspire-brown-light font-light">
                         <template x-for="openingstijd in $store.data.openingstijden">
                             <tr>
-                                <td class="pr-8" x-text="openingstijd.dag"></td>
-                                <td x-text="openingstijd.tijd"></td>
+                                <td class="align-top pr-8" x-text="openingstijd.dag"></td>
+                                <td class="align-top" x-text="openingstijd.tijd"></td>
                             </tr>
                         </template>
                     </table>
@@ -212,8 +274,9 @@
                     <table x-data class="text-inspire-brown-light font-light">
                         <template x-for="openingstijd in $store.data.openingstijdenAfhaalloket">
                             <tr>
-                                <td class="pr-8" x-text="openingstijd.dag"></td>
-                                <td x-text="openingstijd.tijd"></td>
+                                <td class="align-top pr-8" x-show="!openingstijd.extra" x-text="openingstijd.dag"></td>
+                                <td class="align-top pr-8" x-show="openingstijd.extra" x-html="`${openingstijd.dag} <br> <em>${openingstijd.extra}</em>`"></td>
+                                <td class="align-top" x-text="openingstijd.tijd"></td>
                             </tr>
                         </template>
                     </table>
@@ -284,9 +347,9 @@
                     { dag: 'Dinsdag', tijd: '09:00 - 17:00' },
                     { dag: 'Woensdag', tijd: '08:00 - 20:00' },
                     { dag: 'Donderdag', tijd: '08:00 - 20:00' },
-                    { dag: 'Vrijdag', tijd: '08:00 - 20:00' },
-                    { dag: 'Zaterdag', tijd: '08:00 - 20:00' },
-                    { dag: 'Zondag', tijd: '09:30 - 20:00' }
+                    { dag: 'Vrijdag', tijd: '08:00 - 22:00', extra: '(Kerstavond)' }, // 08:00 - 20:00
+                    { dag: 'Zaterdag', tijd: '08:00 - 18:00', extra: '(Eerste Kerstdag)' }, // 08:00 - 20:00
+                    { dag: 'Zondag', tijd: '10:00 - 22:00', extra: '(Tweede Kerstdag)' } // 09:30 - 20:00
                 ],
                 openingstijdenGewijzigd: { datum: 'Zondag 19 december 2021' },
                 socials: [
