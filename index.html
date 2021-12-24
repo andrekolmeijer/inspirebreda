@@ -135,9 +135,9 @@
                 </p>
             </div>
             <div class="sm:mx-8">
-                <div x-data class="flex flex-row-reverse sm:grid grid-cols-12 grid-rows-4 h-[300px] sm:h-[648px] py-4 gap-3 snap-x snap-mandatory overflow-x-auto scrollbar-hidden">
+                <div x-data class="flex flex-row sm:grid grid-cols-12 grid-rows-4 h-[300px] sm:h-[648px] py-4 gap-3 snap-x snap-mandatory overflow-x-auto scrollbar-hidden">
                     <template x-for="image in $store.data.images">
-                        <div class="h-full flex-shrink-0 max-w-[300px] sm:max-w-none second:snap-start snap-center last:snap-end snap-always second:pr-8 last:pl-8 sm:second:pr-0 sm:last:pl-0"
+                        <div class="h-full flex-shrink-0 max-w-[300px] sm:max-w-none second:snap-start snap-center last:snap-end snap-always second:pl-8 last:pr-8 sm:second:pl-0 sm:last:pr-0"
                              :class="image.span">
                             <img class="h-full w-full rounded object-cover"
                                  :src="image.src"
@@ -213,7 +213,7 @@
                             <a :href="menukaart.href"
                                target="_blank">
                                 <div class="space-y-2">
-                                    <img class="rounded-lg shadow-lg sm:hover:shadow-xl sm:transition-shadow sm:duration-200"
+                                    <img class="h-[300px] rounded-lg shadow-lg sm:hover:shadow-xl sm:transition-shadow sm:duration-200"
                                          :src="menukaart.src"
                                          :alt="menukaart.name">
                                     <span class="inline-block text-center w-full text-white font-medium"
