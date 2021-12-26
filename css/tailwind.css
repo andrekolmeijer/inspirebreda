@@ -625,12 +625,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-2\/3 {
-  width: 66.666667%;
-}
-
 .w-3\.5 {
   width: 0.875rem;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .w-\[85\%\] {
@@ -783,12 +783,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   scroll-behavior: smooth;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .border {
@@ -808,6 +808,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(249 138 12 / var(--tw-border-opacity));
 }
 
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .border-transparent {
   border-color: transparent;
 }
@@ -822,11 +827,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(221 197 184 / var(--tw-border-opacity));
 }
 
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .border-opacity-25 {
   --tw-border-opacity: 0.25;
 }
@@ -834,11 +834,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-instagram-blue {
@@ -854,10 +849,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-inspire-brown {
   --tw-bg-opacity: 1;
   background-color: rgb(51 22 6 / var(--tw-bg-opacity));
-}
-
-.bg-transparent {
-  background-color: transparent;
 }
 
 .bg-gradient-to-br {
@@ -882,16 +873,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-stops: var(--tw-gradient-from), #ec4899, var(--tw-gradient-to, rgb(236 72 153 / 0));
 }
 
-.to-indigo-500 {
-  --tw-gradient-to: #6366f1;
-}
-
 .to-black\/10 {
   --tw-gradient-to: rgb(0 0 0 / 0.1);
 }
 
-.to-black\/20 {
-  --tw-gradient-to: rgb(0 0 0 / 0.2);
+.to-indigo-500 {
+  --tw-gradient-to: #6366f1;
 }
 
 .bg-clip-text {
@@ -1220,6 +1207,30 @@ Ensure the default browser behavior of the `hidden` attribute.
     top: 10%;
   }
 
+  .sm\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .sm\:col-end-2 {
+    grid-column-end: 2;
+  }
+
+  .sm\:row-start-1 {
+    grid-row-start: 1;
+  }
+
+  .sm\:row-start-2 {
+    grid-row-start: 2;
+  }
+
+  .sm\:row-end-1 {
+    grid-row-end: 1;
+  }
+
+  .sm\:row-end-2 {
+    grid-row-end: 2;
+  }
+
   .sm\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -1363,6 +1374,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-start-auto {
+    grid-column-start: auto;
+  }
+
+  .lg\:col-end-auto {
+    grid-column-end: auto;
+  }
+
+  .lg\:row-start-1 {
+    grid-row-start: 1;
+  }
+
+  .lg\:row-end-1 {
+    grid-row-end: 1;
+  }
+
   .lg\:scroll-mt-40 {
     scroll-margin-top: 10rem;
   }
