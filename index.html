@@ -102,16 +102,16 @@
         <img class="absolute inset-0 w-full h-full object-cover"
              src="img/christmas-stand.jpg"
              alt="Het afhaalloket van Inspire">
-        <div class="relative h-80 sm:h-96 max-w-5xl m-auto p-8 flex flex-col justify-between items-start">
+        <div class="relative aspect-square h-auto sm:aspect-auto sm:h-96 max-w-5xl m-auto p-8 flex flex-col justify-between items-start">
             <div class="p-4 rounded-lg bg-gradient-to-br from-black/60 to-black/10">
                 <p class="text-lg font-normal text-inspire-orange">
                     Inspire's afhaalloket
                 </p>
                 <h2 class="sm:hidden mt-2 text-2xl font-normal text-white">
-                    Met kerst geopend!
+                    Gewoon lekker open!
                 </h2>
                 <h2 class="hidden sm:block mt-2 text-3xl font-normal text-white">
-                    Wij zijn met kerst geopend!
+                    Ander menu, gewoon open!
                 </h2>
             </div>
             <a href="#wintermenu"
@@ -167,8 +167,8 @@
         </section>
         <section id="wintermenu"
                  class="scroll-mt-8 lg:scroll-mt-40 max-w-5xl m-auto px-8">
-            <div class="py-16 border-t border-gray-200 md:grid grid-cols-2">
-                <div class="relative aspect-[10/9] w-[85%] sm:w-[70%] md:w-auto md:h-[300px] m-auto">
+            <div class="pb-16 pt-20 md:pb-20 border-t border-gray-200 md:grid grid-cols-2">
+                <div class="relative aspect-[10/9] w-[85%] sm:w-[50%] md:w-[75%] lg:w-auto lg:h-[300px] m-auto">
                     <div class="absolute h-[90%] sm:h-[80%] aspect-square -rotate-6 top-[5%] sm:top-[10%] left-0 z-10 shadow-lg">
                         <img class="w-full h-full rounded object-cover"
                              src="img/speciale-openingstijden.jpg"
@@ -180,13 +180,13 @@
                              alt="Het Inspire winter menu">
                     </div>
                 </div>
-                <div class="flex flex-col justify-center items-center mt-16 md:mt-0">
+                <div class="flex flex-col justify-center items-center mt-20 md:mt-0">
                     <div class="w-full sm:w-3/4 md:w-full m-auto">
                         <h2 class="w-full text-center px-8 font-oswald uppercase tracking-wide text-2xl text-inspire-orange">
                             Inspire's Winter menu
                         </h2>
                         <p class="mt-8 font-light text-center">
-                            Het afhaalloket van Inspire is zelfs met de kerst geopend. Kom langs voor een warme versnapering met deze koude dagen!
+                            Het afhaalloket van Inspire is gewoon open. Kom langs voor een warme versnapering met deze koude dagen!
                         </p>
                         <div class="w-full flex justify-center items-center mt-8">
                             <a href="menu/inspire-winter-menu.pdf"
@@ -206,7 +206,7 @@
                 <h2 class="w-full sm:text-center pl-8 sm:px-8 font-oswald uppercase tracking-wide text-2xl text-white">
                     Menukaarten
                 </h2>
-                <ul x-data class="flex sm:grid sm:grid-cols-2 md:grid-cols-4 py-8 sm:px-8 gap-6 sm:gap-9 snap-x snap-mandatory overflow-x-auto sm:overflow-x-hidden scrollbar-hidden">
+                <ul x-data class="flex sm:grid sm:grid-cols-2 lg:grid-cols-4 py-8 sm:px-8 gap-6 sm:gap-9 snap-x snap-mandatory overflow-x-auto sm:overflow-x-hidden scrollbar-hidden">
                     <template x-for="menukaart in $store.data.menukaarten">
                         <li class="flex justify-center sm:hover:scale-105 sm:transition-transform sm:duration-200 h-full flex-shrink-0 second:snap-start snap-center last:snap-end snap-always second:pl-8 last:pr-8 sm:second:pl-0 sm:last:pr-0">
                             <a :href="menukaart.href"
@@ -342,15 +342,15 @@
                     { dag: 'Zondag', tijd: '-' }
                 ],
                 openingstijdenAfhaalloket: [
-                    { dag: 'Maandag', tijd: '09:00 - 17:00' },
-                    { dag: 'Dinsdag', tijd: '09:00 - 17:00' },
-                    { dag: 'Woensdag', tijd: '08:00 - 20:00' },
-                    { dag: 'Donderdag', tijd: '08:00 - 20:00' },
-                    { dag: 'Vrijdag', tijd: '08:00 - 22:00', extra: '(Kerstavond)' }, // 08:00 - 20:00
-                    { dag: 'Zaterdag', tijd: '08:00 - 18:00', extra: '(Eerste Kerstdag)' }, // 08:00 - 20:00
-                    { dag: 'Zondag', tijd: '10:00 - 22:00', extra: '(Tweede Kerstdag)' } // 09:30 - 20:00
+                    { dag: 'Maandag', tijd: '09:00 - 17:00' }, // 09:00 - 17:00
+                    { dag: 'Dinsdag', tijd: '09:00 - 17:00' }, // 09:00 - 17:00
+                    { dag: 'Woensdag', tijd: '08:00 - 20:00' }, // 08:00 - 20:00
+                    { dag: 'Donderdag', tijd: '08:00 - 20:00' }, // 08:00 - 20:00
+                    { dag: 'Vrijdag', tijd: '08:00 - 22:00', extra: '(Oudjaarsdag)' }, // 08:00 - 20:00
+                    { dag: 'Zaterdag', tijd: '-', extra: '(Nieuwjaarsdag)' }, // 08:00 - 20:00
+                    { dag: 'Zondag', tijd: '09:30 - 20:00' } // 09:30 - 20:00
                 ],
-                openingstijdenGewijzigd: { datum: 'Zondag 19 december 2021' },
+                openingstijdenGewijzigd: { datum: 'Maandag 27 december 2021' },
                 socials: [
                     { href: 'https://www.facebook.com/inspirecoffeecompany/', label: 'facebook', svgClass: 'bi-facebook', svgPath: 'M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z' },
                     { href: 'https://twitter.com/inspirecoffee', label: 'twitter', svgClass: 'bi-twitter', svgPath: 'M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z' },
