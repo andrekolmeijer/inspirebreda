@@ -521,16 +521,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 4rem;
 }
 
-.mt-16 {
-  margin-top: 4rem;
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .ml-4 {
   margin-left: 1rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .block {
@@ -943,13 +939,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pb-16 {
   padding-bottom: 4rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
+.pt-20 {
+  padding-top: 5rem;
 }
 
 .pt-16 {
@@ -966,14 +965,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pr-8 {
   padding-right: 2rem;
-}
-
-.pb-16 {
-  padding-bottom: 4rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
 }
 
 .text-center {
@@ -1276,20 +1267,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: auto;
   }
 
-  .sm\:w-\[70\%\] {
-    width: 70%;
+  .sm\:w-\[50\%\] {
+    width: 50%;
   }
 
   .sm\:w-3\/4 {
     width: 75%;
-  }
-
-  .sm\:w-\[60\%\] {
-    width: 60%;
-  }
-
-  .sm\:w-\[50\%\] {
-    width: 50%;
   }
 
   .sm\:max-w-none {
@@ -1376,36 +1359,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: grid;
   }
 
-  .md\:h-\[300px\] {
-    height: 300px;
-  }
-
-  .md\:w-auto {
-    width: auto;
-  }
-
-  .md\:w-full {
-    width: 100%;
-  }
-
-  .md\:w-\[85\%\] {
-    width: 85%;
-  }
-
-  .md\:w-\[70\%\] {
-    width: 70%;
-  }
-
   .md\:w-\[75\%\] {
     width: 75%;
   }
 
-  .md\:w-\[80\%\] {
-    width: 80%;
-  }
-
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:pb-20 {
@@ -1442,11 +1401,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     scroll-margin-top: 10rem;
   }
 
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
