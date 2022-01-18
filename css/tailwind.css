@@ -553,12 +553,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.aspect-\[10\/9\] {
-  aspect-ratio: 10 / 9;
-}
-
 .aspect-square {
   aspect-ratio: 1 / 1;
+}
+
+.aspect-\[10\/9\] {
+  aspect-ratio: 10 / 9;
 }
 
 .aspect-\[21\/29\] {
@@ -589,6 +589,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 20rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-3\.5 {
   height: 0.875rem;
 }
@@ -611,14 +615,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-8 {
   height: 2rem;
-}
-
-.h-96 {
-  height: 24rem;
-}
-
-.h-auto {
-  height: auto;
 }
 
 .w-6 {
