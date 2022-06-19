@@ -156,7 +156,7 @@
     <footer id="contact" class="bg-inspire-brown -scroll-mt-8">
         <div class="pt-16 pb-8 px-8 max-w-5xl m-auto flex flex-col justify-between sm:block">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="space-y-4 sm:row-start-1 sm:row-end-1 lg:row-start-1 lg:row-end-1">
+                <div class="space-y-4">
                     <h2 class="font-oswald uppercase tracking-wide text-white">
                         Contact
                     </h2>
@@ -180,7 +180,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div id="openingstijden" class="space-y-4 scroll-m-8 sm:row-start-1 sm:row-end-1 lg:row-start-1 lg:row-end-1">
+                <div id="openingstijden" class="space-y-4 scroll-m-8">
                     <h2 class="font-oswald uppercase tracking-wide text-white">
                         Openingstijden
                     </h2>
@@ -193,21 +193,7 @@
                         </template>
                     </table>
                 </div>
-                <div class="space-y-4 sm:row-start-2 sm:row-end-2 lg:row-start-1 lg:row-end-1 sm:col-start-2 sm:col-end-2 lg:col-start-auto lg:col-end-auto">
-                    <h2 class="font-oswald uppercase tracking-wide text-white">
-                        Afhaalloket
-                    </h2>
-                    <table x-data class="text-inspire-brown-light font-light">
-                        <template x-for="openingstijd in $store.data.openingstijdenAfhaalloket">
-                            <tr>
-                                <td class="align-top pr-8" x-show="!openingstijd.extra" x-text="openingstijd.dag"></td>
-                                <td class="align-top pr-8" x-show="openingstijd.extra" x-html="`${openingstijd.dag} <br> <em>${openingstijd.extra}</em>`"></td>
-                                <td class="align-top" x-text="openingstijd.tijd"></td>
-                            </tr>
-                        </template>
-                    </table>
-                </div>
-                <div class="space-y-4 sm:row-start-2 sm:row-end-2">
+                <div class="space-y-4">
                     <h2 class="font-oswald uppercase tracking-wide text-white">
                         Social
                     </h2>
@@ -267,15 +253,6 @@
                     { dag: 'Vrijdag', tijd: '-' },
                     { dag: 'Zaterdag', tijd: '-' },
                     { dag: 'Zondag', tijd: '-' }
-                ],
-                openingstijdenAfhaalloket: [
-                    { dag: 'Maandag', tijd: '09:00 - 17:00' }, // 09:00 - 17:00
-                    { dag: 'Dinsdag', tijd: '09:00 - 17:00' }, // 09:00 - 17:00
-                    { dag: 'Woensdag', tijd: '08:00 - 20:00' }, // 08:00 - 20:00
-                    { dag: 'Donderdag', tijd: '08:00 - 20:00' }, // 08:00 - 20:00
-                    { dag: 'Vrijdag', tijd: '08:00 - 20:00' }, // 08:00 - 20:00, extra: '(Oudjaarsdag)'
-                    { dag: 'Zaterdag', tijd: '08:00 - 20:00' }, // 08:00 - 20:00, extra: '(Nieuwjaarsdag)'
-                    { dag: 'Zondag', tijd: '09:30 - 20:00' } // 09:30 - 20:00
                 ],
                 openingstijdenGewijzigd: { datum: 'Maandag 3 januari 2022' },
                 socials: [
