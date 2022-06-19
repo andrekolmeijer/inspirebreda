@@ -302,67 +302,39 @@
                     ],
                     "telephone": "+31765153272",
                     "email": "breda@inspirecoffee.com",
-                    "openingHoursSpecification": {
-                        "@type": "OpeningHoursSpecification",
-                        "dayOfWeek": [
-                            "Monday",
-                            "Tuesday",
-                            "Wednesday",
-                            "Thursday",
-                            "Friday",
-                            "Saturday",
-                            "Sunday"
-                        ],
-                        "opens": "00:00",
-                        "closes": "00:00"
-                    },
+                    "openingHoursSpecification": [
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                                "Monday",
+                                "Tuesday"
+                            ],
+                            "opens": "09:00",
+                            "closes": "17:00"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                                "Wednesday",
+                                "Thursday",
+                                "Friday",
+                                "Saturday"
+                            ],
+                            "opens": "08:00",
+                            "closes": "20:00"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": "Sunday",
+                            "opens": "10:30",
+                            "closes": "20:00"
+                        }
+                    ],
                     "hasMenu": [
                         "https://inspirebreda.nl/menu/lunch-1.pdf",
                         "https://inspirebreda.nl/menu/drank-3.pdf",
                         "https://inspirebreda.nl/menu/drank-1.pdf",
                         "https://inspirebreda.nl/menu/drank-2.pdf"
-                    ],
-                    "department": [
-                        {
-                            "@type": "CafeOrCoffeeShop",
-                            "name": "Inspire Afhaalloket",
-                            "image": "https://inspirebreda.nl/img/banner-mobile.jpg",
-                            "address": {
-                                "@type": "PostalAddress",
-                                "streetAddress": "Veemarktstraat 4",
-                                "addressLocality": "Breda",
-                                "postalCode": "4811 ZE"
-                            },
-                            "telephone": "+31765153272",
-                            "openingHoursSpecification": [
-                                {
-                                    "@type": "OpeningHoursSpecification",
-                                    "dayOfWeek": [
-                                        "Monday",
-                                        "Tuesday"
-                                    ],
-                                    "opens": "09:00",
-                                    "closes": "17:00"
-                                },
-                                {
-                                    "@type": "OpeningHoursSpecification",
-                                    "dayOfWeek": [
-                                        "Wednesday",
-                                        "Thursday",
-                                        "Friday",
-                                        "Saturday"
-                                    ],
-                                    "opens": "08:00",
-                                    "closes": "20:00"
-                                },
-                                {
-                                    "@type": "OpeningHoursSpecification",
-                                    "dayOfWeek": "Sunday",
-                                    "opens": "09:30",
-                                    "closes": "20:00"
-                                }
-                            ]
-                        }
                     ]
                 },
                 {
