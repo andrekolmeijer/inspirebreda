@@ -133,7 +133,7 @@
                 <h2 class="w-full sm:text-center pl-8 sm:px-8 font-oswald uppercase tracking-wide text-2xl text-white">
                     Menukaarten
                 </h2>
-                <ul x-data class="flex sm:grid sm:grid-cols-2 lg:grid-cols-4 py-8 sm:px-8 gap-6 sm:gap-9 snap-x snap-mandatory overflow-x-auto sm:overflow-x-hidden scrollbar-hidden">
+                <ul x-data class="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 py-8 sm:px-8 gap-6 sm:gap-9 snap-x snap-mandatory overflow-x-auto sm:overflow-x-hidden scrollbar-hidden">
                     <template x-for="menukaart in $store.data.menukaarten">
                         <li class="flex justify-center sm:hover:scale-105 sm:transition-transform sm:duration-200 h-full flex-shrink-0 second:snap-start snap-center last:snap-end snap-always second:pl-8 last:pr-8 sm:second:pl-0 sm:last:pr-0">
                             <a :href="menukaart.href"
@@ -240,10 +240,12 @@
                     { src: 'img/carousel-8.jpg', span: 'col-span-2 row-span-1', alt: 'Verse appeltaart' }
                 ],
                 menukaarten: [
-                    { href: 'menu/lunch-1.pdf', src: 'img/lunch-1.jpg', name: 'Lunchkaart' },
-                    { href: 'menu/drank-3.pdf', src: 'img/drank-3.jpg', name: 'Alcoholvrij' },
-                    { href: 'menu/drank-1.pdf', src: 'img/drank-1.jpg', name: 'Wijn & Bubbels' },
-                    { href: 'menu/drank-2.pdf', src: 'img/drank-2.jpg', name: 'Bier & Cocktails' }
+                    { href: 'menu/lunch-11.pdf', src: 'img/lunch-11.jpg', name: 'Lunchkaart' },
+                    { href: 'menu/drank-11.pdf', src: 'img/drank-11.jpg', name: 'Koffie & Warm' },
+                    { href: 'menu/drank-12.pdf', src: 'img/drank-12.jpg', name: 'Sap & Frisdrank' },
+                    { href: 'menu/drank-13.pdf', src: 'img/drank-13.jpg', name: 'Bierkaart' },
+                    { href: 'menu/drank-14.pdf', src: 'img/drank-14.jpg', name: 'Wijn & Bubbels' },
+                    { href: 'menu/drank-15.pdf', src: 'img/drank-15.jpg', name: 'Cocktails' }
                 ],
                 openingstijden: [
                     { dag: 'Maandag', tijd: '09:00 - 17:00' },
