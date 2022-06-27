@@ -13,6 +13,7 @@ module.exports = {
         'inspire-brown': '#C99C6C', // #C99C6C color picker
         'inspire-brown-dark': '#331606', // #331606 menukaart / #331606 honktwee
         'inspire-beige': '#EFDAC5', // #EFDAC5 honktwee (achtergrond kleur)
+        'inspire-white': '#FAFAFA', // #FDFDFF andre / #FAFAFA instagram
         'inspire-blue-gray': '#B0C4CF', // Verf kleur voorgevel (zie cover photo mobiel)
         'instagram-blue': '#0095F6',
         'instagram-blue-dark': '#0074CC',
