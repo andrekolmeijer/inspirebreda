@@ -257,8 +257,8 @@
                 openingstijden: [
                     { dag: 'Maandag', tijd: '09:00 - 17:00*' },
                     { dag: 'Dinsdag', tijd: '09:00 - 17:00*' },
-                    { dag: 'Woensdag', tijd: '09:00 - 20:00' },
-                    { dag: 'Donderdag', tijd: '09:00 - 20:00' },
+                    { dag: 'Woensdag', tijd: '09:00 - 17:00*' },
+                    { dag: 'Donderdag', tijd: '09:00 - 17:00*' },
                     { dag: 'Vrijdag', tijd: '09:00 - 20:00' },
                     { dag: 'Zaterdag', tijd: '09:00 - 20:00' },
                     { dag: 'Zondag', tijd: '10:30 - 20:00' }
@@ -317,7 +317,9 @@
                             "@type": "OpeningHoursSpecification",
                             "dayOfWeek": [
                                 "Monday",
-                                "Tuesday"
+                                "Tuesday",
+                                "Wednesday",
+                                "Thursday"
                             ],
                             "opens": "09:00",
                             "closes": "17:00"
@@ -325,8 +327,6 @@
                         {
                             "@type": "OpeningHoursSpecification",
                             "dayOfWeek": [
-                                "Wednesday",
-                                "Thursday",
                                 "Friday",
                                 "Saturday"
                             ],
